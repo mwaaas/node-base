@@ -1,5 +1,5 @@
 FROM node:5.12
 
-RUN npm install -g angular-cli@webpack
+RUN npm install -g angular-cli
 
 WORKDIR /usr/src
