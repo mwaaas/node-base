@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:5.12
 
 RUN npm install -g angular-cli@webpack
 
