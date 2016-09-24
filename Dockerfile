@@ -2,7 +2,8 @@ FROM node:5.12
 
 RUN npm install -g angular-cli && npm install -g --save process-nextick-args
 
-WORKDIR /usr/src
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
 # Fix bug https://github.com/npm/npm/issues/9863
 RUN cd $(npm root -g)/npm \
